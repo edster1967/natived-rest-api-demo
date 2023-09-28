@@ -14,8 +14,7 @@ java {
 repositories {
     mavenCentral()
 }
-
-dependencies {
+need dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -24,12 +23,4 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
-}
-jar {
-    manifest {
-        attributes(
-
-                'Main-Class': 'com.example.nativedrestapidemo.NativedRestApiDemoApplication'
-        )
-    }
 }
